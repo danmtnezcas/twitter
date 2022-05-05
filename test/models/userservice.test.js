@@ -10,7 +10,7 @@ describe("Tests for UserService", () => {
     })
 
     test("2. Get all user data in a list", () => {
-        const user = UserService.create(1, "danmtnezcas", "daniel");
+        const user = UserService.create(1, "danmtnezcas", "Daniel");
         const userInfoInList = UserService.getInfo(user);
         expect(userInfoInList[0]).toBe(1);
         expect(userInfoInList[1]).toBe("danmtnezcas");
