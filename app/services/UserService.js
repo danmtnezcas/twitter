@@ -13,6 +13,10 @@ class UserService {
         list.push(user.bio);
         return list;
     }
+
+    static updateUsername(user, newUsername) {
+        user.username = newUsername;
+    }
 }
 
 module.exports = UserService;
